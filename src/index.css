@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,3 +13,105 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  margin: 0 auto;
+  max-width: 900px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #31707e;
+}
+
+.navbar .links {
+  margin-left: auto;
+} 
+
+.links a {
+  margin-left: 20px;
+  
+}
+
+.navbar a {
+  color: #757575;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 8px;
+}
+
+.navbar a:hover {
+  color: #9c1414;
+}
+
+.content {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+
+
+/* blog previews / list */
+
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #f2f2f2;
+  transition:cubic-bezier(1, 0, 0, 1) 0.3s;
+  cursor: pointer;
+}
+
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+
+.blog-preview h2 {
+  font-size: 20px;
+  color: #31707e;
+  margin-bottom: 8px;
+}
+
+.blog-preview a {
+  text-decoration: none;
+}
+
+/* Create */
+
+.about {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.about h2 {
+  font-size: 24px;
+  color: #31707e;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.about p {
+
+  font-size: 16px;
+  color: #757575;
+  margin-bottom: 8px;
+  text-align: left;
+  line-height: 1.89;
+
+}
+
+/* .delete {
+  color: "white"
+  backgroundColor: '#31707e'
+  borderRadius: "8px"
+} */
+
