@@ -96,8 +96,6 @@ code {
   padding: 10px 16px;
   margin: 20px 0;
   border-bottom: 1px solid #f2f2f2;
-  transition:cubic-bezier(1, 0, 0, 1) 0.3s;
-  cursor: pointer;
 }
 
 .blog-details h2 {
@@ -152,7 +150,7 @@ code {
   font-size: 16px;
   color: #757575;
   margin-bottom: 8px;
-  text-align: center;
+  text-align:left;
   line-height: 1.89;
 }
 
