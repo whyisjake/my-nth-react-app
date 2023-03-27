@@ -82,7 +82,15 @@ code {
 
 .blog-preview a {
   text-decoration: none;
+  color: #333;
 }
+
+
+.blog-preview a:visited {
+  color: #333;
+}
+
+
 
 /* Create */
 
