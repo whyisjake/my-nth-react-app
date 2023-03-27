@@ -1,8 +1,19 @@
+import useFetch from "./useFetch";
+
 const About = () => {
+    const { data: blog, error, isPending } = useFetch('http://localhost:8000/blogs/4');
+
     return (  
         <div className="about">
-            <h2>About This Site</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi perspiciatis incidunt enim odit numquam veritatis earum nulla amet officia facilis molestiae illum maiores, quas non et architecto porro quod voluptas tempora quaerat aperiam esse beatae vel doloremque. Ipsam nam atque soluta sed est rem error, magnam minus magni velit accusamus nesciunt aspernatur dignissimos alias placeat minima cupiditate earum corporis id!</p>
+            { isPending && <div>Loading...</div> }
+            { error && <div>{ error }</div> }
+            { blog && (
+                <article>
+                    <h2>{blog.title }</h2>
+                    <p>By { blog.author }</p>
+                    <div>{ blog.body }</div>
+                </article>
+            )}
         </div>
     );
 }
